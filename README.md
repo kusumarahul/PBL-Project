@@ -1,2 +1,2 @@
 # Virtual Resume Builder
-It consists of HTML+CSS+JavaScript.
+The Virtual Resume Builder is a web-based application that allows users to create, preview, and download professional resumes directly from their browser. Users enter personal details, education, skills, and experience in a simple form. The application dynamically generates a well-formatted resume template using HTML, CSS, and JavaScript. It eliminates the need for manual formatting and provides a real-time preview of the resume. With an added download as PDF feature, users can save and share their resume instantly.
