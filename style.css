@@ -1,0 +1,174 @@
+/* === Global Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* === Page Layout === */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #333;
+}
+
+/* === Header === */
+header {
+  background: rgba(255, 255, 255, 0.944);
+  color: #323232;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 2.2em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 6px rgba(224, 220, 220, 0.15);
+  backdrop-filter: blur(10px);
+}
+
+/* === Container === */
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex: 1;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* === Form Section === */
+.form-section {
+  flex: 1;
+  background: #ffffffd9;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  min-width: 350px;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #4a148c;
+  border-bottom: 3px solid #7c4dff;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+/* === Inputs and Labels === */
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 500;
+  color: #333;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #7c4dff;
+  outline: none;
+  box-shadow: 0 0 6px rgba(124, 77, 255, 0.5);
+}
+
+/* === Buttons === */
+button {
+  background: linear-gradient(45deg, #ff6b6b, #feca57);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-weight: 600;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+button#download-btn {
+  background: linear-gradient(45deg, #43cea2, #185a9d);
+}
+
+/* === Resume Preview === */
+.preview-section {
+  flex: 1;
+  background: #f9f9ff;
+  padding: 25px;
+  border-radius: 15px;
+  overflow-y: auto;
+  max-height: 80vh;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  min-width: 350px;
+}
+
+.preview-section h2 {
+  color: #185a9d;
+}
+
+/* === Resume Output === */
+.resume-output {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 15px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+}
+
+.resume-output h1 {
+  font-size: 1.8em;
+  color: #6a11cb;
+  border-bottom: 2px solid #6a11cb;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.resume-section {
+  margin-top: 15px;
+}
+
+.section-title {
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.resume-section p {
+  margin-bottom: 6px;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* === Print Styling === */
+@media print {
+  body {
+    background: white;
+  }
+  .form-section, header, button {
+    display: none;
+  }
+  .preview-section {
+    box-shadow: none;
+  }
+  .resume-output {
+    box-shadow: none;
+    border: none;
+  }
+}
